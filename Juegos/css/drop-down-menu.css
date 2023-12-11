@@ -1,0 +1,117 @@
+/* ******************************************************************* */
+
+#menu{
+	margin: 0px 0 0 0px;
+	padding: 0px;
+}
+
+#menudin {
+	margin: 0px 0 0 0px;
+	padding: 0px;
+	list-style: none;
+	color: #fff;
+	line-height: 45px;
+	display: inline-block;
+	float: left;
+	z-index: 1000;
+	
+}
+/* ******************************************************************* */
+/* STYLING UP THE LINKS */
+#menudin a {
+	color:#fff;
+	text-decoration:none;
+	
+}
+#menudin > li{
+	cursor: pointer;
+	padding: 0px 0px;
+	
+	}
+#menudin li {
+	position:relative;
+}
+#menudin ul {
+	padding:0px; margin:0px; display:block; display:inline;
+}
+
+
+#menudin li ul {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin-top: 30px;
+	width: 100%;
+	line-height: 16px;
+	color: #fff; /* for IE */
+	display: none;
+}
+/* ******************************************************************* */
+/* SHOW SUBMENU  1 */
+#menudin li:hover ul    {
+	display:block;
+}
+#menudin li ul li{ display:block; margin:5px 0px; padding: 5px 0px;  list-style-type:none; }
+#menudin li ul li:first-child { border-top: none; }
+#menudin li ul li a { display:block; color:#fff; padding-left:5px; font-weight:bold;}
+
+
+
+
+
+
+#menudin ul li ul {
+	margin-top: 0em;
+	margin-left: 7em;
+	background-color: #FFFFFF;
+}
+#menudin li:hover ul ul     {
+	display:none;
+}
+/* SHOW SUBMENU  2 */
+#menudin ul li:hover ul     {
+	display:block;
+}
+#menudin li .last{
+	position: relative;
+}
+#menu .last2 {
+	margin: -20px 0 0 0;
+	position: relative;
+}
+
+#menudin li .corner_left{ position:absolute; left:0px; top:0px;}
+#menudin li .corner_right{
+	position: absolute;
+	left: 130px;
+	top: 0px;
+}
+#menudin li .middle{
+	position: absolute;
+	left: 18px;
+	height: 20px;
+	width: 115px;
+	top: 0px;
+	background-color: #FFF;
+}
+
+#menudin ul ul {
+	z-index:1000;
+}
+#menudin {
+	z-index:1;
+}
+#menudin ul {
+	z-index:2;
+}
+#menudin ul ul {
+	z-index:3;
+}
+/* ******************************************************************* */
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; height: 1%; }
+* html ul li a {
+	height: 1%;
+}
+/* End */

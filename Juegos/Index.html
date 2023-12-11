@@ -1,0 +1,1140 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>
+		Montenegro Editores Clubs </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="/favicon.ico" type="image/x-icon" rel="icon">
+	<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="/css/actual.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js">
+
+	</script>
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+	<script src="html5 prueba.js?1702061835683"></script>
+	<script>
+		function hizo_click(a) {
+
+			var x = $("#" + a);
+			if (x.is(":hidden")) {
+				x.slideDown(1000);
+			}
+			else {
+				x.slideUp(1000);
+			}
+		}
+
+		function oculta(a) {
+			var x = $("#" + a);
+			x.slideUp(1);
+
+		}
+
+
+		function muestra(a) {
+			var x = $("#" + a);
+			x.slideDown(1);
+
+			if (a == "sub_menu_486")
+				imagen_distribuidores_der();
+
+		}
+
+		function muestra_r(a) {
+			var x = $("#" + a);
+			x.slideDown(1);
+
+		}
+
+
+		function muestra_tiempo(a) {
+			var x = $("#" + a);
+			x.slideDown(1000);
+
+		}
+
+
+		function oculta_tiempo(a) {
+			var x = $("#" + a);
+			x.slideUp(1000);
+
+		}
+
+
+		function oculta_rapido(a) {
+			var x = $("#" + a);
+			x.slideUp(1);
+
+		}
+
+	</script>
+<script>
+								var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+								function init() {
+									canvas = document.getElementById("canvas");
+									anim_container = document.getElementById("animation_container");
+									dom_overlay_container = document.getElementById("dom_overlay_container");
+									var comp=AdobeAn.getComposition("221881877C37C04DB8255BD3C0317989");
+									var lib=comp.getLibrary();
+									var loader = new createjs.LoadQueue(false);
+									loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+									loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+									var lib=comp.getLibrary();
+									loader.loadManifest(lib.properties.manifest);
+								}
+								function handleFileLoad(evt, comp) {
+									var images=comp.getImages();	
+									if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+								}
+								function handleComplete(evt,comp) {
+									//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+									var lib=comp.getLibrary();
+									var ss=comp.getSpriteSheet();
+									var queue = evt.target;
+									var ssMetadata = lib.ssMetadata;
+									for(i=0; i<ssMetadata.length; i++) {
+										ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+									}
+									var preloaderDiv = document.getElementById("_preload_div_");
+									preloaderDiv.style.display = 'none';
+									canvas.style.display = 'block';
+									exportRoot = new lib.html5prueba();
+									stage = new lib.Stage(canvas);
+									stage.enableMouseOver();	
+									//Registers the "tick" event listener.
+									fnStartAnimation = function() {
+										stage.addChild(exportRoot);
+										createjs.Ticker.framerate = lib.properties.fps;
+										createjs.Ticker.addEventListener("tick", stage);
+									}	    
+									//Code to support hidpi screens and responsive scaling.
+									AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+									AdobeAn.compositionLoaded(lib.properties.id);
+									fnStartAnimation();
+								}
+								</script>
+
+	<style>
+		.nav {
+			width: 100%;
+			height: 65px;
+			text-decoration: none;
+			display: inline-flex;
+			background-color: rgb(145, 22, 22);
+			font-size: 20px;
+			justify-content: center;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin-left: 0px;
+		}
+
+		li {
+			display: inline-block;
+			margin: 20px;
+
+		}
+		li img{
+			width: 170px;
+			height: 170px;
+		}
+
+		a {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			text-decoration: none;
+			color: #000;
+
+		}
+
+
+		.tabla_principal {
+			width: 100%;
+			min-width: 100%;
+		}
+
+		h1 {
+			justify-content: center;
+			margin-left: 45%;
+			opacity: 50%;
+		}
+
+		.cuadro {
+			width: 350px;
+			height: 398px;
+			border: 0x solid #8f8d8d;
+			box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+			margin: 5px;
+			display: inline-block;
+			background-color: #ecebeb;
+			justify-content: center;
+			align-items: center;
+		}
+		div .cuadro img{
+			margin-left:40px; 
+			margin-top: 10px;
+			 width:250px; 
+			 height:250px;
+		}
+		.cuadro1 {
+			width: 95%;
+			height: 600px;
+			border: 0px solid #8f8d8d;
+			margin: 5px;
+			margin-left: 40px;
+			display: inline-block;
+			box-shadow: 0 0 10px rgba(105, 105, 105, 0.5);
+			
+		}
+	
+
+		
+	</style>
+
+</head>
+
+<body onload="init();" style="margin:0px;">
+
+	<table width="100%" align="center" cellpadding="0" cellspacing="0" valign="top" class="tabla_principal"
+		id="tabla_pagina" style="width: 100px;">
+		<tbody>
+			<tr>
+				<td>
+					<link rel="stylesheet" type="text/css" href="/css/drop-down-menu.css">
+					<script type="text/javascript" src="/js/menu.js"></script>
+					<div class="header_completo" style="z-index:99999;position:relative">
+						<table width="100%" align="center" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td width="200px" align="right">
+										<img src="img/logoclub_chico.png" alt="">
+									</td>
+									<td class="td_header_club" align="right">
+										<img src="img/club.png" width="100%" alt="">
+									</td>
+									<td style="text-align:center">
+										<a href="/Clubs">
+											<img src="img/logo.png" alt="">
+										</a>
+									</td>
+									<td valign="bottom" align="right">
+										<table>
+											<tbody>
+												<tr>
+													<td align="right">
+														<a href="/" style="color:#000;font-weight:bold;">Inicio</a>
+													</td>
+													<td align="right"><a href="/" style="color:#000;font-weight:bold;">
+															<img src="img/inicio.png" alt="">
+														</a><br></td>
+												</tr>
+												<tr>
+													<td align="right">
+														<a href="/paginas/pagina/52"
+															style="color:#000;font-weight:bold;">Contacto</a>
+													</td>
+													<td align="right">
+														<a href="/paginas/pagina/52"
+															style="color:#000;font-weight:bold;">
+															<img src="img/correo.png" alt="">
+														</a>
+														<br>
+													</td>
+												</tr>
+												<tr>
+													<td align="right">
+														<a href="/Clubs/logout"
+															style="color:#000;font-weight:bold;">Cerrar sesión</a>
+													</td>
+													<td align="right"><a href="/Clubs/logout"
+															style="color:#000;font-weight:bold;">
+															<img src="img/cerrarsesion.jpg" alt="">
+														</a>
+														<br>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+
+								<tr>
+
+									<td colspan="6">
+										<ul id="nav">
+											<div class="nav">
+												<ul id="menudin">
+													<li>
+														<a href="/clubs/pagina/959" style="color: #ffffff;"
+															class="e_menu">¿Qué es el club?</a>
+													</li>
+												</ul>
+												<ul id="menudin">
+													<li>
+														<a href="#" class="e_menu" style="color: #ffffff;">Mi cuenta</a>
+													</li>
+												</ul>
+												<ul id="menudin">
+													<li>
+														<a href="/clubs/pagina/960" class="e_menu"
+															style="color: #ffffff;">Actividades</a>
+													</li>
+												</ul>
+												<ul id="menudin">
+													<li>
+														<a href="/examenes/filtrar_exclusivo" class="e_menu"
+															style="color: #ffffff;">¿Qué tanto sabes?</a>
+													</li>
+												</ul>
+												<ul id="menudin">
+													<li id="li_plimon" style="display: block;">
+														<a href="#" class="e_menu"></a>
+													</li>
+												</ul>
+												<ul id="menudin">
+													<li id="li_limon">
+														<a href="/clubs/pagina/979" class="e_menu"
+															style="color: #ffffff;">Descargas</a>
+													</li>
+												</ul>
+												<ul id="menudin">
+													<li>
+														<a href="/" class="e_menu" style="color: #ffffff;">Sitio</a>
+													</li>
+												</ul>
+											</div>
+										</ul>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<script>
+						function muestra_menu(num) {
+							oculta_divs();
+							muestra("sub_menu_" + num);
+						}
+						function oculta_divs() {
+
+							var x = $("div.div_sub");
+							x.slideUp(1);
+
+						}
+
+						oculta_divs();
+						//muestra("sub_menu_48");
+
+
+
+						function color_ninos() {
+							document.getElementById("barra_menu").style.background = "#c49a34";
+
+						}
+
+
+						function imagen_distribuidores_der_1() {
+							var imag = document.createElement("DIV");
+							imag.setAttribute("id", "distribuidores_der");
+
+
+							div = document.getElementById('espacio_derecho');
+							div.appendChild(imag);
+
+
+							var imag = document.createElement("DIV");
+							imag.setAttribute("id", "distribuidores_izq");
+
+
+							div = document.getElementById('espacio_derecho');
+							div.appendChild(imag);
+
+
+
+							//document.getElementById('distribuidores_der').innerHTML="<a target='_blank' href='/Examenes/contestar_encuesta/430'><img src='/img/definitivo/capdis.jpg' width='150px' ></a>";
+							document.getElementById('distribuidores_der').className = "distribuidores_der";
+						}
+
+
+						function imagen_distribuidores_der() {
+							setTimeout("imagen_distribuidores_der_1()", 500);
+
+
+
+
+						}
+
+
+						function tardios(x) {
+							if (x == 1) {
+								muestra("div_muestra");
+							}
+
+							else {
+								oculta("div_muestra");
+							}
+						}
+
+						function redimencion_pag() {
+							w = $(window).width();
+
+							if (w < 1000) {
+								document.getElementById('tabla_pagina').style.width = '100px';
+								muestra("li_plimon");
+								muestra("li_verde");
+								try {
+									document.getElementById('nuevo_links').style.width = '600px';
+								} catch (e) { }
+
+
+								try {
+									document.getElementById('contenido_ambos_banners').style.width = '300px';
+								} catch (e) { }
+
+
+								setTimeout("tardios(1)");
+								muestra("div_muestra");
+
+
+								$(".librero_portada_s").attr("style", "padding-right:0px");
+
+
+
+							}
+							else {
+								oculta("li_plimon");
+								oculta("li_verde");
+								document.getElementById('tabla_pagina').style.width = '100%';
+
+								try {
+									document.getElementById('nuevo_links').style.width = '330px';
+								} catch (e) { }
+
+								try {
+									document.getElementById('contenido_ambos_banners').style.width = '600px';
+								} catch (e) { }
+
+								$(".librero_portada_s").attr("style", "padding-right:5px");
+
+								setTimeout("tardios(2)");
+
+								oculta("div_muestra");
+
+
+
+
+
+
+							}
+
+						}
+
+						$(window).resize(function () {
+							redimencion_pag();
+						});
+
+						redimencion_pag();
+						setTimeout("redimencion_pag()", 500);
+					</script>
+					<style>
+						.menu_pp {
+							background: #ccc;
+							height: 50px;
+							width: 140px;
+
+						}
+					</style>
+					<div style="height:5px">
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+
+
+				<td style="height:400px" valign="top">
+
+					<div style="padding:10px; margin-left:15px;" class="texto_con_padding" id="el_contenido">
+						<h1>Actividades</h1>
+						<div style="text-align:justify;padding-left:10px;padding-right:20px;">
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_crucigrama.png">
+								<a href="/crucigramas/"><strong style="margin-left:130px;">Crucigramas</strong></a>
+								<div style="text-align: center;">Resuelve los crucigramas para poner a prueba tus
+									conocimientos.
+								</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_sopa_de_letras.png">
+								<a href="/Clubs/sopa_letras/"><strong style="margin-left:130px;">Sopa de letras</strong></a>
+								<div style="text-align: center;">Encuentra las palabras dentro de la Sopa de
+									letras.dasdfrefgrerggdfsddfsf&nbsp;</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_completa_la_palabra.png">
+								<a href="/Clubs/completa_la_palabra"><strong style="margin-left:120px;">Completa la
+										palabra</strong></a>
+								<div style="text-align: center;">¿Dónde pongo los acentos? Captura las burbujas,
+									ggdfgdgdgd dfgrgrttyhthytr
+								</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_simetrias.png">
+								<a href="/clubs/simetria"><br><strong style="margin-left:140px;">Simetrías</strong></a>
+								<div style="text-align: center;">Arma las figuras basándote en los ejes de
+									simetría.&nbsp;fdsfwfcbvb fgdghrth
+								</div>
+							</div>
+
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_serpientes_y_escaleras.png">
+								<a href="/clubs/serpientes"><strong style="margin-left:100px;">Serpientes y
+										escaleras</strong></a>
+								<div style="text-align: center;">¿Sabes las tablas de multiplicar? Llega hasta la meta
+									con tus habilidades matemáticas.
+								</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_matbots.png" >
+								<a href="/img/club/Juegos/MatBot/index.html" target="_blank"><strong style="margin-left:140px;">MATBOTS</strong></a>
+								<div style="text-align: center;">Neutraliza los robots con tus	habilidades matemáticas para las operaciones: suma, resta,&nbsp;
+								</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_crea_tu_avatar.png">
+								<a href="/clubs/avatar" target="_blank"><strong style="margin-left:130px;">Crea tu avatar</strong></a>
+								<div style="text-align: center;">Crea un personaje, puede parecerse a ti o no, y cámbialo todas las veces que quieras&nbsp;
+								</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_que_tanto_sabes.png" >
+								<a href="/examenes/filtrar_exclusivo/"><strong style="margin-left:120px;">¿Qué tanto sabes?</strong></a> 
+									<div style="text-align: center;">Exámenes en línea de todas las asignaturas sdfdgghbhgghs ddsa dsad
+									</div>
+							</div>
+
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_examenes_diagnostico.png" >
+								<a href="/examenes/diagnostico/" target="_blank"><strong style="margin-left:100px;">Exámenes de
+									diagnóstico</strong></a>
+										<div style="text-align: center;">Prepárate para el inicio del ciclo escolar con
+								estos exámenes en línea 
+								&nbsp;</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_habilidad_lectora.png">
+								<a href="/examenes/filtrar_exclusivo/filtro_materia:11"target="_blank"><strong style="margin-left:120px;">Habilidad
+										lectora</strong></a>
+										<div style="text-align: center;">Podrás medir cuántas palabras por minuto puedes leer,	además, cada lectura&nbsp;</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_nuevo_reto.png" >
+								<a href="/paginas/pagina/717" target="_blank"><strong style="margin-left:120px;">Nuevo Reto</strong></a>
+									<div style="text-align: center;">En el Nuevo Reto compites contra Despiste en una carrera con tiempo limitado.
+								Puedes elegir 
+								&nbsp;</div>
+							</div>
+							
+							<div class="cuadro" >
+								<img src="img/Web_2023_ClubMon_icono_laberintos_matematicos.png" >
+								<a href="/paginas/biblioteca/464/466/472/695"><strong style="margin-left:90px;">Laberintos matemáticos</strong></a>
+								<div style="text-align: center;">Encuentra la salida del laberinto resolviendo operaciones matemáticas. Hay 16
+								niveles&nbsp;</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_barquitos_de_papel.png" >
+								<a href="/juegos/barcos"><strong style="margin-left:100px;">Barquitos de papel </strong></a>
+								<div style="text-align: center;">Aprende a usar las coordenadas y los puntos cardinales y llena de pintura los
+										barquitos&nbsp;
+								</div>
+							</div>
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_tamgram.png" >
+								<a href="/juegos/tangram"><strong style="margin-left:130px;">Tangram</strong></a>
+								<div style="text-align: center;">El juego tradicional para armar figuras con 7 piezas geométricas. Ejercita tu
+								habilidad espacial.&nbsp;</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_plaza_montenegro.png" >
+								<a href="/examenes/plaza_montenegro"><strong style="margin-left:120px;">Plaza Montenegro </strong></a>
+								<div style="text-align: center;">En esta plaza aprenderás a usar los billetes y las monedas al comprar en 4
+								tiendas diferentes.&nbsp;</div>
+							</div>
+
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_plato_del_bien_comer.png" >
+								<a href="/biencomer/"><strong style="margin-left:120px;">Plato del Bien Comer</strong></a>
+								<div style="text-align: center;"> Arma el Plato del Bien Comer y conoce los alimentos de una dieta balanceada.
+								Hay dos</div>
+							</div>
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_circuito_mexico.png" >
+								<a href="/Turistas/index"><strong style="margin-left:110px;">Circuito México</strong></a>
+								<div style="text-align: center;">En este juego haces un recorrido por la república mexicana y respondes
+								preguntas.&nbsp;</div>
+							</div>
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_rompecabezas.png" >
+								<a href="/juegos/rompecabezas">
+									<strong style="margin-left:90px;">Rompecabezas de México</strong></a>
+								<div style="text-align: center;">el rompecabezas con las figuras de los estados de la república mexicana.&nbsp;</div>
+							</div>
+							<div class="cuadro">
+								<img src="img/Web_2023_ClubMon_icono_piano.png" >
+								<a href="/biencomer/piano">
+									<strong style="margin-left:150px;">Piano</strong></a>
+								<div style="text-align: center;">Descubre cómo suenan algunas teclas el piano y crea secuencias. asdfffd dsds&nbsp;</div> 
+							</div>
+							
+							<div class="cuadro" >
+								<a href="/juegos/memoramas"><img src="img/Web_2023_ClubMon_icono_memorama.png" ></a>
+								<a href="/juegos/memoramas">
+									<strong style="margin-left:140px;">Memoramas</strong></a>
+								 <div style="text-align: center;">El juego clásico con diferentes temáticas para desafiar tu memoria.&nbsp;</div>
+							</div>
+							
+							<h2 style="margin-left: none;">Planeta Montenegro</h2>
+							<div class="" style="margin-left: 20%;">
+								<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:520px; height: 48px;">
+									<canvas id="canvas" width="520" height="480" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+									<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:520px; height:480px; position: absolute; left: 0px; top: 0px; display: none;">
+									</div>
+								</div>
+								<div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:704px; width: 520px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1702061835684 style='vertical-align: middle; max-height: 100%'/></div>
+							</div>
+						</div>
+
+						<script>muestra("sub_menu_958")</script>
+					</div>
+
+
+
+
+
+
+				</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					<div class="footer_web">
+						<div class="footer_gris">
+							<div style="float:left;width:32%;margin-right:2%;background:#aa2334;height:30px;"></div>
+							<div style="float:left;width:32%;background:#e4656f;height:30px;"></div>
+							<div style="float:right;width:32%;background:#aa2334;height:30px;"></div>
+						</div><br>
+						<center>
+							<div style="padding-left:20px">
+								<div class="footer_2017_1">
+									<a href="/">Home</a> |
+									<a href="/tienda2016/">Tienda</a> |
+									<a href="https://www.amazon.com.mx/gp/aag/main/ref=olp_merch_name_1?ie=UTF8&amp;asin=B01CF19N6S&amp;isAmazonFulfilled=1&amp;seller=A2IN96J60NNSHT"
+										target="_blank">Amazon</a> |
+									<a href="/paginas/pagina/52">Contacto</a>
+
+									<br>
+
+									<a href="/paginas/pagina/49">Nosotros</a> |
+									<a href="/paginas/pagina/99">Alumnos</a> |
+									<a href="/Clubs">Club</a> |
+									<a href="/paginas/pagina/1116">Maestros</a> |
+									<a href="/paginas/bachillerato_maestros">Bachillerato</a> |
+									<a href="/paginas/guia_padres">Padres</a> |
+									<a href="/paginas/pagina/1109">Distribución</a>
+
+									<br>
+									<a href="http://montenegroeditores.com.mx/Paginas/pagina/704">Aviso de
+										privacidad</a> |
+									<a href="https://anydesk.es/download" target="_blank">Soporte remoto</a>
+									<br>
+									Montenegro® &nbsp;&nbsp;&nbsp;&nbsp;Todos los derechos reservados
+								</div>
+
+
+								<div class="footer_2017_2">
+
+
+									<div class="icono_footer">
+										<a href="http://blog.montenegroeditores.com.mx/" target="_blank">
+											<img src="img/blog.png">
+										</a>
+										<a href="https://www.facebook.com/MontenegroEditoresOficial?fref=ts"
+											target="_blank">
+											<img src="img/face.png">
+										</a>
+										<a href="https://www.instagram.com/montenegro_editores/" target="_blank">
+											<img src="img/ins.png">
+										</a>
+										<a href="https://www.youtube.com/user/montenegroeditores" target="_blank">
+											<img src="img/youtube.png">
+										</a>
+									</div>
+
+
+								</div>
+
+
+								<style>
+									.icono_footer {
+										position: relative;
+										float: left;
+										/*margin-right:65px;*/
+										margin-top: 10px;
+										top: -10px;
+									}
+
+									.icono_footer img {
+										margin-right: 5px;
+									}
+
+									.footer_2017_1 {
+										float: left;
+										text-align: left;
+										font-weight: bold;
+										font-size: 11px;
+									}
+
+
+									.footer_2017_2 {
+										float: right;
+										text-align: right;
+										font-weight: bold;
+									}
+								</style>
+							</div>
+						</center>
+					</div>
+					<div class="footer_movil"><img src="/img/movil_2020/linea.png" style="width:100%" alt=""><br>
+						<center>
+
+							<div class="icono_footer_movil">
+								<a href="http://blog.montenegroeditores.com.mx/" target="_blank">
+									<img src="img/blog.png">
+								</a>
+								<a href="https://www.facebook.com/MontenegroEditoresOficial?fref=ts" target="_blank">
+									<img src="img/face.png">
+								</a>
+								<a href="https://www.instagram.com/montenegro_editores/" target="_blank">
+									<img src="img/ins.png">
+								</a>
+								<a href="https://www.youtube.com/user/montenegroeditores" target="_blank">
+									<img src="img/youtube.png">
+								</a>
+								<br>
+								<a href="/paginas/pagina/52">Contacto</a>
+								<br>
+								<a href="http://montenegroeditores.com.mx/Paginas/pagina/704">Aviso de privacidad</a>
+								<br>Montenegro® &nbsp;&nbsp;&nbsp;&nbsp;Todos los derechos reservados
+							</div>
+
+
+						</center>
+					</div>
+
+
+				</td>
+			</tr>
+
+
+		</tbody>
+	</table>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.4.css">
+	<script type="text/javascript" src="/js/jquery.lightbox-0.4.pack.js"></script>
+	<script type="text/javascript" src="/js/rotativo_botones_cargar.js"></script>
+	<script type="text/javascript">
+
+		$('.plink_imagen').lightBox({
+			overlayBgColor: '#000',
+			overlayOpacity: 0.6,
+			imageLoading: 'https://montenegroeditores.com.mx/img/lightbox/loading.gif',
+			imageBtnClose: 'https://montenegroeditores.com.mx/img/lightbox/close.gif',
+			imageBtnPrev: 'https://montenegroeditores.com.mx/img/lightbox/prev.gif',
+			imageBtnNext: 'https://montenegroeditores.com.mx/img/lightbox/next.gif',
+			containerResizeSpeed: 350,
+			txtImage: 'Foto',
+			txtOf: 'de'
+		});
+
+	</script>
+
+	<script>
+
+		function aumentar_contador(div, num) {
+
+			var x = $("#" + div);
+			if (x.is(":hidden")) {
+
+				$("#aumentar_contador").load("/paginas/aumentar_contador", { elem: num },
+					function () {
+
+					});
+
+
+
+
+				x.slideDown(1000);
+			}
+			else {
+				x.slideUp(1000);
+			}
+		}
+
+		function hizo_click_multiples(padre, hijo) {
+
+			try {
+
+				var el = document.getElementById(padre);
+				var as = el.getElementsByTagName("div");
+				for (var i = 0; i < as.length; i++) {
+					oculta(as[i].id);
+				}
+
+
+				muestra(hijo);
+			} catch (e) { }
+		}
+		function hizo_click(a) {
+
+			var x = $("#" + a);
+			if (x.is(":hidden")) {
+				x.slideDown(1000);
+			}
+			else {
+				x.slideUp(1000);
+			}
+		}
+
+		function oculta(a) {
+			var x = $("#" + a);
+			x.slideUp(1);
+
+		}
+
+
+		function muestra_r(a) {
+			var x = $("#" + a);
+			x.slideDown(1000);
+
+		}
+
+		function oculta_r(a) {
+			var x = $("#" + a);
+			x.slideUp(1000);
+
+		}
+
+		function agrega_tiny(dir, dir2) {
+			tinyMCE.execInstanceCommand('mce_editor_0', 'mceInsertContent', true, "<a href='plink_imagen_" + dir2 + "'><img src='" + dir + "'	mce_tsrc='" + dir + "' mce_src='" + dir + "' width='200'  height='150'  hspace='10' vspace='10'></a>");
+		}
+
+
+		function agrega_tiny_video(imagen, archivo) {
+			tinyMCE.execInstanceCommand('mce_editor_0', 'mceInsertContent', true, "<div align='center'><br><a  href='flowplayer_" + archivo + "' > <img src='" + imagen + "'	mce_tsrc='" + imagen + "' mce_src='" + imagen + "' width='250'  height='200'  hspace='10' vspace='10'></a><br></div>");
+		}
+
+
+
+		function agrega_tiny_doc_img(dir, dir2) {
+			tinyMCE.execInstanceCommand('mce_editor_0', 'mceInsertContent', true, "<a href='desc_doc_/documentos/descargar/" + dir2 + "'><img src='" + dir + "'	mce_tsrc='" + dir + "' mce_src='" + dir + "' width='150'  height='100'  hspace='10' vspace='10'></a>");
+		}
+
+		function agrega_tiny_doc_tit(dir, dir2) {
+			tinyMCE.execInstanceCommand('mce_editor_0', 'mceInsertContent', true, "<a href='desc_doc_/documentos/descargar/" + dir2 + "'>" + dir + "</a>");
+		}
+
+
+		function establece_mis_colores(a, b, c, d) {
+			if (a != "")
+				document.getElementById("home").style.background = a;
+			if (b != "")
+				document.getElementById("container").style.background = b;
+			if (c != "")
+				document.getElementById("content").style.background = c;
+			if (d != "")
+				document.getElementById("content").style.color = d;
+
+		}
+
+		var getElementsByClassName = function (className, tag, elm) {
+			if (document.getElementsByClassName) {
+				getElementsByClassName = function (className, tag, elm) {
+					elm = elm || document;
+					var elements = elm.getElementsByClassName(className),
+						nodeName = (tag) ? new RegExp("\\b" + tag + "\\b", "i") : null,
+						returnElements = [],
+						current;
+					for (var i = 0, il = elements.length; i < il; i += 1) {
+						current = elements[i];
+						if (!nodeName || nodeName.test(current.nodeName)) {
+							returnElements.push(current);
+						}
+					}
+					return returnElements;
+				};
+			}
+			else if (document.evaluate) {
+				getElementsByClassName = function (className, tag, elm) {
+					tag = tag || "*";
+					elm = elm || document;
+					var classes = className.split(" "),
+						classesToCheck = "",
+						xhtmlNamespace = "http://www.w3.org/1999/xhtml",
+						namespaceResolver = (document.documentElement.namespaceURI === xhtmlNamespace) ? xhtmlNamespace : null,
+						returnElements = [],
+						elements,
+						node;
+					for (var j = 0, jl = classes.length; j < jl; j += 1) {
+						classesToCheck += "[contains(concat(' ', @class, ' '), ' " + classes[j] + " ')]";
+					}
+					try {
+						elements = document.evaluate(".//" + tag + classesToCheck, elm, namespaceResolver, 0, null);
+					}
+					catch (e) {
+						elements = document.evaluate(".//" + tag + classesToCheck, elm, null, 0, null);
+					}
+					while ((node = elements.iterateNext())) {
+						returnElements.push(node);
+					}
+					return returnElements;
+				};
+			}
+			else {
+				getElementsByClassName = function (className, tag, elm) {
+					tag = tag || "*";
+					elm = elm || document;
+					var classes = className.split(" "),
+						classesToCheck = [],
+						elements = (tag === "*" && elm.all) ? elm.all : elm.getElementsByTagName(tag),
+						current,
+						returnElements = [],
+						match;
+					for (var k = 0, kl = classes.length; k < kl; k += 1) {
+						classesToCheck.push(new RegExp("(^|\\s)" + classes[k] + "(\\s|$)"));
+					}
+					for (var l = 0, ll = elements.length; l < ll; l += 1) {
+						current = elements[l];
+						match = false;
+						for (var m = 0, ml = classesToCheck.length; m < ml; m += 1) {
+							match = classesToCheck[m].test(current.className);
+							if (!match) {
+								break;
+							}
+						}
+						if (match) {
+							returnElements.push(current);
+						}
+					}
+					return returnElements;
+				};
+			}
+			return getElementsByClassName(className, tag, elm);
+		};
+
+
+		function colores_calendario() {
+			/*
+			try{
+			
+				color1=document.getElementById("home").style.background;
+				color2=document.getElementById("container").style.background;
+				color3=document.getElementById("content").style.background;
+				color4=document.getElementById("content").style.color;
+			
+			
+				if(color1=="")
+					color1='#000000';
+				if(color2=="")
+					color2='#2d2c2a';
+			
+				if(color3=="")
+					color3='#2d2c2a';
+				if(color4=="")
+					color4='#ffffff';
+			
+			
+				elems=getElementsByClassName('ui-datepicker-inline');
+				for (var i = 0; i < elems.length; i++) {
+					elems[i].style.background=color1;
+			
+				}
+			
+			
+				elems=getElementsByClassName('ui-datepicker-next');
+				for (var i = 0; i < elems.length; i++) {
+					elems[i].style.background=color3;
+			
+				}
+			
+				elems=getElementsByClassName('ui-datepicker-prev');
+				for (var i = 0; i < elems.length; i++) {
+					elems[i].style.background=color3;
+			
+				}
+			
+			
+				elems=getElementsByClassName('ui-datepicker');
+				trs=elems[0].getElementsByTagName('td');
+				aas=elems[0].getElementsByTagName('td');
+				for (var i = 0; i < trs.length; i++) {
+					if(trs[i].innerHTML!='&nbsp;'){
+						trs[i].style.background=color3;
+						aas[i].style.color=color4;
+					}
+			
+					if(trs[i].className=='ui-datepicker-week-end-cell' || trs[i].className==''){
+						trs[i].style.background=color2;
+						aas[i].style.color=color4;
+			
+					}
+			
+			
+				}
+			
+			
+				elems=getElementsByClassName('ui-datepicker-new-month');
+				for (var i = 0; i < elems.length; i++) {
+					elems[i].style.background=color3;
+					elems[i].style.color=color4;
+			
+				}
+			
+				elems=getElementsByClassName('ui-datepicker-new-year');
+				for (var i = 0; i < elems.length; i++) {
+					elems[i].style.background=color3;
+					elems[i].style.color=color4;
+			
+				}
+			
+				elems=getElementsByClassName('ui-datepicker-days-cell ui-datepicker-current-day ui-datepicker-today');
+				for (var i = 0; i < elems.length; i++) {
+					elems[i].style.background=color2;
+					elems[i].style.color=color4;
+			
+				}
+			
+			}catch(e){}
+			*/
+		}
+
+
+		function redireccionar_pagina_cib() {
+			location.href = 'http://www.cibnor.gob.mx/';
+		}
+		document.getElementsByClassName2 = function (clsName) {
+			var retVal = new Array();
+			var elements = document.getElementsByTagName("*");
+			for (var i = 0; i < elements.length; i++) {
+				if (elements[i].className.indexOf(" ") >= 0) {
+					var classes = elements[i].className.split(" ");
+					for (var j = 0; j < classes.length; j++) {
+						if (classes[j] == clsName)
+							retVal.push(elements[i]);
+					}
+				}
+				else if (elements[i].className == clsName)
+					retVal.push(elements[i]);
+			}
+			return retVal;
+		}
+
+		function descripcion_doc() {
+
+			texto_descripcion = new Array();
+			cad = "";
+			elemens = document.getElementsByClassName2('desc_doc');
+			for (i = 0; i < elemens.length; i++) {
+
+
+				spl = elemens[i].href.split("/");
+				cad += spl[5] + ",";
+				texto_descripcion[spl[5]] = "";
+				/*
+						elemens[i]['onmouseover']=new Function("muestra_texto(texto_descripcion[spl[5]]);return false;");
+						elemens[i]['onmouseout']=new Function("oculta_texto();return false;");
+				*/
+				elemens[i].id = 'div_descripcion_num_' + spl[5];
+
+			}
+
+			$("#div_mouse22").load("/documentos/script_documentos", { cadena: cad },
+				function () {
+
+				});
+
+		}
+
+
+		function animar_cargando(id) {
+
+			$("#" + id).animate({
+				width: "500px",
+				opacity: 0.0,
+				marginLeft: "0.6in",
+				fontSize: "3em",
+				borderWidth: "10px"
+			}, 1500);
+		}
+
+
+		hizo_click_multiples("contenedor_div_transversales", "contenedor_div_transversales_5")
+	</script>
+
+
+
+	<script>
+
+		tam_fuente = 12;
+		function agrandar_fuente() {
+			tam_fuente++;
+			document.getElementById('el_contenido').style.fontSize = tam_fuente + "px";
+		}
+
+		function reducir_fuente() {
+			tam_fuente--;
+			document.getElementById('el_contenido').style.fontSize = tam_fuente + "px";
+		}
+
+	</script>
+	<style>
+		.td_contenido a {
+			color: #0000cc;
+			text-decoration: underline;
+		}
+	</style>
+
+
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23993780-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</body>
+
+</html>

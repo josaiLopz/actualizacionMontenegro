@@ -1,0 +1,64 @@
+
+
+
+body{
+
+}
+.e_menu{
+	display:block;
+/*	width:142; */
+
+	width:160; 
+
+/*	width:166;*/
+	height:30px;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:center;
+	line-height:30px;
+	margin-top:2px;
+	margin-right:8px;
+	
+}
+
+
+.e_menu:hover{
+	
+}
+
+
+
+
+#menu{
+	min-width:670px;
+
+
+}
+.header_completo{
+	width:100%;
+}
+
+.contenido_banners{
+	position:relative;
+	width:100%;
+
+
+}
+
+
+
+.footer_gris{
+	width:100%;
+	height:30px;
+	overflow:hidden;
+}
+
+.menu_footer_a{
+	float:left;
+	padding-left:20px;
+	padding-top:10px;
+/*	border: 1px solid #000000;*/
+}
+
+
+
